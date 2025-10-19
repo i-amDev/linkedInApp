@@ -40,4 +40,24 @@ public class PostLikeServiceImpl implements PostLikeService {
 
         log.info("Post with id : {} liked successfully", postId);
     }
+
+    /**
+     * @param postId
+     * @param userId
+     */
+    @Override
+    public void unlikePost(Long postId, Long userId) {
+        log.info("Attempting to unlike the post with id : {}", postId);
+
+        boolean exist = postsRepository.existsById(postId);
+        if (!exist) throw new ResourceNotFoundException("Post not found with id " + postId);
+
+        boolean alreadyLiked = postLikeRepository.existsByUserIdAndPostId(userId, postId);
+        if (!alreadyLiked) throw new BadRequestException("Cannot unlike the post which is not liked yet.");
+
+        postLikeRepository.deleteByUserIdAndPostId(userId, postId);
+
+        log.info("Post with id : {} unliked successfully", postId);
+
+    }
 }
