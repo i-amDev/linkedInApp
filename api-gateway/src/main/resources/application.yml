@@ -14,10 +14,11 @@ spring:
             - Path=/api/v1/posts_service/**
           filters:
             - StripPrefix=2
-  #        - id: user-service
-  #          uri: lb://USER-SERVICE
-  #          predicates:
-  #            - Path=/api/v1/users/**
-  #          filters:
-  #            - StripPrefix=2
+
+#        - id: connections-service
+#          uri: lb://CONNECTIONS-SERVICE
+#          predicates:
+#            - Path=/api/v1/connections_service/**
+#          filters:
+#            - StripPrefix=2
 
