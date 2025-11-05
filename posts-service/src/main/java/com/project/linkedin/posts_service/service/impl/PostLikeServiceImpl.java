@@ -19,10 +19,6 @@ public class PostLikeServiceImpl implements PostLikeService {
 
     private final PostsRepository postsRepository;
 
-    /**
-     * @param postId
-     * @param userId
-     */
     @Override
     public void likePost(Long postId, Long userId) {
         log.info("Attempting to like the post with id : {}", postId);
@@ -41,10 +37,6 @@ public class PostLikeServiceImpl implements PostLikeService {
         log.info("Post with id : {} liked successfully", postId);
     }
 
-    /**
-     * @param postId
-     * @param userId
-     */
     @Override
     public void unlikePost(Long postId, Long userId) {
         log.info("Attempting to unlike the post with id : {}", postId);
