@@ -28,10 +28,6 @@ public class PostsServiceImpl implements PostsService {
 
     private final ConnectionsClient connectionsClient;
 
-    /**
-     * @param postCreateRequestDto
-     * @return
-     */
     @Override
     public PostDto createPost(PostCreateRequestDto postCreateRequestDto, Long userId) {
         PostEntity entity = modelMapper.map(postCreateRequestDto, PostEntity.class);
@@ -41,10 +37,6 @@ public class PostsServiceImpl implements PostsService {
         return modelMapper.map(savedEntity, PostDto.class);
     }
 
-    /**
-     * @param postId
-     * @return
-     */
     @Override
     public PostDto getPostById(Long postId) {
         log.debug("Retrieving post with id : {}", postId);
@@ -58,10 +50,6 @@ public class PostsServiceImpl implements PostsService {
         return modelMapper.map(postEntity, PostDto.class);
     }
 
-    /**
-     * @param userId
-     * @return
-     */
     @Override
     public List<PostDto> getAllPostsOfUser(Long userId) {
         List<PostEntity> posts = postsRepository.findByUserId(userId);
