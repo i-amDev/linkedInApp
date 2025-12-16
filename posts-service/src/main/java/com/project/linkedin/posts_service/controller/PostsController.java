@@ -1,6 +1,5 @@
 package com.project.linkedin.posts_service.controller;
 
-import com.project.linkedin.posts_service.auth.UserContextHolder;
 import com.project.linkedin.posts_service.dto.PostCreateRequestDto;
 import com.project.linkedin.posts_service.dto.PostDto;
 import com.project.linkedin.posts_service.service.PostsService;
