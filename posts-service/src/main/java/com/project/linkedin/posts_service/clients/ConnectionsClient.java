@@ -12,6 +12,4 @@ public interface ConnectionsClient {
 
     @GetMapping("/connections/first-degree")
     public List<PersonDto> getFirstConnections (@PathVariable Long userId);
-
-
 }
