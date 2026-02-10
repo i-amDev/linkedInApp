@@ -25,4 +25,5 @@ public class ConnectionsController {
     public PersonEntity createPerson(@RequestBody PersonEntity personEntity) {
         return connectionsService.createPerson(personEntity);
     }
+
 }
