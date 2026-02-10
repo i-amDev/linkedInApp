@@ -15,4 +15,5 @@ public class UserContextHolder {
     public static void clear() {
         currentUserId.remove();
     }
+
 }
