@@ -9,5 +9,4 @@ public class ConnectionsServiceApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ConnectionsServiceApplication.class, args);
 	}
-
 }
