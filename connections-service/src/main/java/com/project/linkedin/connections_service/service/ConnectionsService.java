@@ -26,4 +26,5 @@ public class ConnectionsService {
         log.info("Creating a person entity.");
         return personRepository.save(personEntity);
     }
+
 }
