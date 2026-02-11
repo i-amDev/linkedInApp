@@ -35,5 +35,4 @@ public class PostsController {
         List<PostDto> posts = postsService.getAllPostsOfUser(userId);
         return ResponseEntity.ok(posts);
     }
-
 }
