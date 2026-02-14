@@ -13,5 +13,6 @@ public class FeignClientInterceptor implements RequestInterceptor {
         if (userId != null) {
             requestTemplate.header("X-User-Id", userId.toString());
         }
+
     }
 }
