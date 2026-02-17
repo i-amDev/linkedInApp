@@ -14,5 +14,4 @@ public class PostDto {
     private Long userId;
 
     private LocalDateTime createdAt;
-
 }
