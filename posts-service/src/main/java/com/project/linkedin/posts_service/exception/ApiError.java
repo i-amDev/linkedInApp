@@ -24,4 +24,5 @@ public class ApiError {
         this.error = error;
         this.statusCode = statusCode;
     }
+
 }
