@@ -25,5 +25,4 @@ public class PostEntity {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
-
 }
