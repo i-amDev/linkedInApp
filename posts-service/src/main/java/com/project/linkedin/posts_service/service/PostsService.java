@@ -14,4 +14,5 @@ public interface PostsService {
     PostDto getPostById(Long postId);
 
     List<PostDto> getAllPostsOfUser(Long userId);
+
 }
