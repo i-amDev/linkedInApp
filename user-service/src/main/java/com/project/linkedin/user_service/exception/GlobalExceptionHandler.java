@@ -24,4 +24,5 @@ public class GlobalExceptionHandler {
         ApiError apiError = new ApiError(runtimeException.getLocalizedMessage(), HttpStatus.INTERNAL_SERVER_ERROR);
         return new ResponseEntity<>(apiError, HttpStatus.INTERNAL_SERVER_ERROR);
     }
+
 }
