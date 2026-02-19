@@ -50,6 +50,5 @@ public class PostLikeServiceImpl implements PostLikeService {
         postLikeRepository.deleteByUserIdAndPostId(userId, postId);
 
         log.info("Post with id : {} unliked successfully", postId);
-
     }
 }
