@@ -10,5 +10,4 @@ import java.util.List;
 public interface PostsRepository extends JpaRepository<PostEntity, Long> {
 
     List<PostEntity> findByUserId(Long userId);
-
 }
