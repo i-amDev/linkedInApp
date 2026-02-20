@@ -56,4 +56,5 @@ public class PostsServiceImpl implements PostsService {
         return posts.stream().
                 map((postEntity) -> modelMapper.map(postEntity, PostDto.class)).collect(Collectors.toList());
     }
+
 }
