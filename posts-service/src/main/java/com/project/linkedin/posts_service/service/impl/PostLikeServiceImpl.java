@@ -51,4 +51,5 @@ public class PostLikeServiceImpl implements PostLikeService {
 
         log.info("Post with id : {} unliked successfully", postId);
     }
+
 }
