@@ -25,5 +25,4 @@ public class PostLikeEntity {
 
     @CreationTimestamp
     private LocalDateTime createdAt;
-
 }
